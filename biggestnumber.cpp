@@ -6,6 +6,7 @@ int main()
   
   int numberOne = 0;
   int numberTwo = 0;
+  int biggest = 0;
 
   std::cout<<"Please enter a whole number:\n";
   std::cin>>numberOne;
@@ -13,11 +14,26 @@ int main()
   std::cout<<"Please enter another whole number:\n";
   std::cin>>numberTwo;
 
-  //determine if first or second is bigger and store that in a third variable
+  if(numberOne == numberTwo)
+  {
+          std::cout<<"The numbers are the same.\n";
+  }
 
+  else
+  {
+          if(numberOne > numberTwo)
+          {
+                  biggest = numberOne;
+          }
 
-  std::cout<<"Of those two numbers, the biggest is: ";
-  //print out the variable representing the biggest number
+          else
+          {
+                  biggest = numberTwo;
+          }
+
+          std::cout<<"Of those two numbers, the biggest is: ";
+          std::cout<<biggest;
+  }
 
   std::cout<<std::endl<<"Thank you for playing.\n";
   
