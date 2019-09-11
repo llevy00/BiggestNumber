@@ -3,13 +3,15 @@
 
 int main()
 {
-  //declare variables here
+  
+  int numberOne = 0;
+  int numberTwo = 0;
 
   std::cout<<"Please enter a whole number:\n";
-  //get first input using std::cin>>
+  std::cin>>numberOne;
 
   std::cout<<"Please enter another whole number:\n";
-  //get second input using std::cin>> again with a second variable
+  std::cin>>numberTwo;
 
   //determine if first or second is bigger and store that in a third variable
 
